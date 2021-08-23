@@ -34,3 +34,8 @@ Touch__init();
 if ( isTouchEnabled == false ) {
   $('body').niceScroll();
 }
+/*풀페이지 작업*/ 
+new fullpage('#fullpage', {
+
+  menu : ".top-bar .menu-box-1"
+});

@@ -1,4 +1,67 @@
 
+@font-face {
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+}
+/*탑바작업*/
+
+.top-bar{
+    z-index:100;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:30px;
+    background-color:white;
+   
+     font-family: 'EliceDigitalBaeum_Bold';
+  }
+  .top-bar .menu-box-1 > li > a{
+     font-family: 'EliceDigitalBaeum_Bold';
+  }
+  .top-bar .menu-box-1 > li.active > a{
+    color:red;
+     
+  }
+/*css작업 라이브러리*/
+/* .section{
+    width:1920px;
+} */
+.name{
+    font-family: 'Y_Spotlight';
+    font-size:45px;
+}
+/*css작업 시작*/
+/*메인페이지*/
+.section-1{
+    width:1920px;
+    height:1000px;
+}
+.section-1 > .main_text1{
+    top:30%;
+    left:20%;
+    font-family: 'EliceDigitalBaeum_Bold';
+    font-size:70px;
+
+}
+.section-1 > img{
+    position: absolute;
+    top:25%;
+    left:13%;
+}
+/*ABOUTME*/
+.section-2{
+width:1920px;
+height:1600px;
+}
+/*목업작업*/
 .section-3 > .img_mock1{
     top:25%;
     left:7%;
