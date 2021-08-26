@@ -13,6 +13,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+
 <!-- 테일윈드 -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.4/tailwind.min.css">
 
@@ -29,58 +31,48 @@
 </head>
 <body>
     <div class="site-wrap">
-        <div id="fullpage">
-            <header class="top-bar flex">
-                <a href="#" class="p-5 flex items-center ml-5 text-2xl">JEUN</a>
-                <div class="flex-grow"></div>
-                <ul class="menu-box-1 flex mr-7">
-                  <li data-menuanchor="section-1"><a class="h-full flex items-center p-5 px-8" href="section-1">HOME</a></li>
-                  <li data-menuanchor="section-2"><a class="h-full flex items-center p-5 px-8" href="section-2">ABOUTME</a></li>
-                  <li data-menuanchor="section-3"><a class="h-full flex items-center p-5 px-8" href="section-3">PORTFOLIO</a></li>
-                  <li data-menuanchor="section-6"><a class="h-full flex items-center p-5 px-8" href="section-6">CONTECT</a></li>
-                 
-                </ul>
-              </header>
-        </div>
-<section class="section section-1 relative">
-    <div class="main_text1 absolute">
-        <a href="">Positive Mind,<br> Cooperation is important<br> Designer Portfolio</a>
-    </div>
-    <img src="./source/메인페이지 텍스트.png" alt="">
-   
+        <header class="top-bar flex">
+          <a href="#" class="p-5 flex items-center ml-5 text-2xl">JEUN</a>
+                      <div class="flex-grow"></div>
+                      <ul class="menu-box-1 flex mr-7">
+                        <li data-menuanchor="#section-1"><a class="h-full flex items-center p-5 px-8" href="#section-1">HOME</a></li>
+                        <li data-menuanchor="#section-2"><a class="h-full flex items-center p-5 px-8" href="#section-2">ABOUTME</a></li>
+                        <li data-menuanchor="#section-3"><a class="h-full flex items-center p-5 px-8" href="#section-3">PORTFOLIO</a></li>
+                        <li data-menuanchor="#section-6"><a class="h-full flex items-center p-5 px-8" href="#section-6">CONTECT</a></li>
+          </ul>
+        </header>
       
-   
-</section>    
-<section class="section section-2 relative">
-  <h6 class="name section_2_text">AboutMe</h6>
-  <div class="picture_1">
-      <img src="./source/이미지파일 자리.png" alt="">
-  </div>
-    
-
-</section>
-<section class="section section-3 relative">
-
-    
-    <div class="img_mock1 absolute">
-        <!-- <img src="./source/portfoilo(website)목업.png" alt=""> -->
-    </div>
-
-
-</section>
-<section class="section section-4 relative">
-
-    <div class="img_mock2 absolute">
-        <!-- <img src="./source/ux,ui mock.png" alt=""> -->
-    </div>
-</section>
-<section class="section section-5">
-    
-</section>
-<section class="section section-6">
-  
-</section>
-</div>
+      <div id="fullpage">
+        <section class="section section-1 relative overflow-hidden " data-anchor="section-1">
+           <div class="positive_text absolute inset-0 flex items-center justify-center whitespace-nowrap border-text mousemove-effect-1-el" data-mousemove-effect1-hor-res="0.05" data-mousemove-effect1-ver-res="0.05">
+            <a href="">Positive Mind,<br>
+                cooperative,<br></a>
+            
+          </div>
+          <div class="web_text relative z-1 h-full flex items-center justify-center whitespace-nowrap select-none mousemove-effect-1-el" data-mousemove-effect1-hor-res="-0.01" data-mousemove-effect1-ver-res="-0.01">
+           <a href="">Web Designer,<br>
+            Han Jieun</a>
+            
+          </div>
+        </section>
+        <section class="section section-2 relative" data-anchor="section-2">
+          <div class="name1 absolute name_text_1">AboutMe</div>
+          <div class="char_picture">
+            <img src="https://picsum.photos/id/200/260/350" alt="">
+          </div>
+          <div class="profile_lin absolute">
+          <div class="AboutMe_text_wrap">PROFILE
+         <a class="section_name">출생년도</a>
+            <a class="section_content">1995.04</a>
+          </div>
+           <div class="license_wrap"></div>
+            </div>
+        </section>
+        <section class="section" data-anchor="section-3"></section>
+        <section class="section" data-anchor="section-6"></section>
+      </div>
+      </div>
+      
 
 </body>
 </html>
